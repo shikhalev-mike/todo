@@ -100,7 +100,7 @@
                             <outputDirectory>${project.build.directory}/classes/static</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${project.parent.basedir}/todo-master/dist/todo/browser</directory>
+                                    <directory>${project.parent.basedir}/frontend/dist/todo/browser</directory>
                                 </resource>
                             </resources>
                         </configuration>

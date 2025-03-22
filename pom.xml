@@ -8,12 +8,15 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>ru.ssau</groupId>
-    <artifactId>todo</artifactId>
+    <groupId>com.ssau</groupId>
+    <artifactId>study</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Todo</name>
     <description>Full stack todo app</description>
     <packaging>pom</packaging>
 
-    <modules></modules>
+    <modules>
+        <module>frontend</module>
+        <module>backend</module>
+    </modules>
 </project>
