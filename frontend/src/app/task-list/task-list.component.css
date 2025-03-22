@@ -1,0 +1,82 @@
+/* Заголовок списка задач */
+.task-list h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Сетка задач */
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Минимальная ширина 200px */
+  gap: 20px; /* Отступ между задачами */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .tasks-grid {
+      grid-template-columns: repeat(2, 1fr); /* Две колонки даже на узких экранах */
+  }
+}
+
+@media (max-width: 480px) {
+  .tasks-grid {
+      grid-template-columns: 1fr; /* Одна колонка на очень узких экранах */
+  }
+}
+
+/* Стили для каждой задачи (если используется app-task-summary) */
+app-task-summary {
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+app-task-summary:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Стили для названия задачи */
+app-task-summary span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Стили для описания задачи */
+app-task-summary p {
+  margin: 5px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Стили для даты окончания */
+app-task-summary p strong {
+  color: #333;
+}
+
+/* Стили для статуса задачи */
+app-task-summary p:last-child {
+  margin-bottom: 0;
+}
+
+/* Стили для кнопки удаления */
+app-task-summary button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+app-task-summary button:hover {
+  background-color: #c82333;
+}

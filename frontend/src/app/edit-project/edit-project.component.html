@@ -1,0 +1,13 @@
+<form [formGroup]="projectForm" >
+    <label>Название:</label>
+    <input type="text" formControlName="name" required>
+    <label>Описание:</label>
+    <textarea formControlName="description"></textarea>
+    <label>Дата начала:</label>
+    <input type="date" formControlName="startDate">
+    <label>Дата окончания:</label>
+    <input type="date" formControlName="endDate">
+    <app-task-list *ngIf="isEditMode" [projectId]="projectId!"></app-task-list>
+    
+    <button (click)="saveProject()">{{ isEditMode ? 'Сохранить' : 'Создать' }}</button>
+</form>

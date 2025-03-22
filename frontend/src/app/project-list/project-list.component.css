@@ -1,0 +1,79 @@
+/* Основные стили для контейнера */
+.project-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Контейнер для кнопки и поиска */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+/* Кнопка "Создать" */
+.edit-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 2px; /* Добавлен отступ между кнопкой и полем поиска */
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.edit-button:active {
+  transform: translateY(0);
+}
+
+/* Контейнер для поиска */
+.search-container {
+  flex-grow: 1; /* Растягивает контейнер на доступное пространство */
+  max-width: 400px; /* Ограничивает ширину поля поиска */
+  display: flex;
+}
+
+/* Поле ввода поиска */
+.search-input {
+  width: 100%;
+  padding: 12px;
+  margin-left: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Сетка проектов */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Стили для каждого проекта (если нужно) */
+app-project-summary {
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+app-project-summary:hover {
+  transform: translateY(-4px);
+}

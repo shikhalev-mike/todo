@@ -1,0 +1,17 @@
+<div class="project-list">
+  <div class="header">
+    <button [routerLink]="['/projects/', null]" class="edit-button">Создать</button>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Поиск проектов..."
+             [(ngModel)]="searchQuery"
+             (ngModelChange)="onSearch($event)">
+    </div>
+  </div>
+
+  <div class="projects-grid">
+    <app-project-summary
+      *ngFor="let project of projects"
+      [project]="project" [incompleteTasksCount]="taskCount[project.id]"
+    ></app-project-summary>
+  </div>
+</div>

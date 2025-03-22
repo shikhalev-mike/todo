@@ -1,0 +1,6 @@
+<div class="task-list">
+    <h3>Список задач</h3>
+    <div class="tasks-grid">
+        <app-task-summary *ngFor="let task of tasks" [task]="task" (delete)="deleteTask($event)"></app-task-summary>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+/* Основные стили для формы */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стили для заголовка */
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для label */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Стили для input и textarea */
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Стили для кнопки */
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Стили для кнопки в режиме редактирования */
+  button[type="submit"] {
+    background-color: #28a745;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  /* Стили для кнопки в режиме создания */
+  button[type="submit"]:not([disabled]) {
+    background-color: #007bff;
+  }
+  
+  button[type="submit"]:not([disabled]):hover {
+    background-color: #0056b3;
+  }
+  
+  /* Стили для ошибок валидации */
+  .ng-invalid.ng-touched {
+    border-color: #dc3545;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }

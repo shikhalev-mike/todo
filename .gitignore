@@ -1,0 +1,35 @@
+# Backend (Spring Boot)
+backend/target/
+*.jar
+*.war
+*.iml
+
+# Logs
+logs/
+*.log
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Maven
+backend/.m2/
+.m2/
+
+# Node.js / Angular (Frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/cache/
+frontend/.angular/ 
+
+# Angular environment files
+frontend/src/environments/environment*.ts
+
+# Compiled files
+*.tsbuildinfo
+

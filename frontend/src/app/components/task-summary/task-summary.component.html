@@ -1,0 +1,7 @@
+<div class="task-item">
+    <h4>{{ task.name }}</h4>
+    <p>{{ task.description }}</p>
+    <p><strong>End Date:</strong> {{ task.endDate | date }}</p>
+    <p><strong>Status:</strong> {{ task.completed ? 'Completed' : 'Not Completed' }}</p>
+    <button type="button" (click)="onDelete()">Удалить</button> <!-- Кнопка для удаления задачи -->
+</div>
